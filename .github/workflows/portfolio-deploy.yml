@@ -23,7 +23,7 @@ jobs:
               uses: actions/checkout@v4
               #setup github pages
             - name: Setup github pages
-              uses: action/configure-pages@v4
+              uses: actions/configure-pages@v4
 
               #static code artifacts
             - name: Upload static
