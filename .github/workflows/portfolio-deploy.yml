@@ -8,6 +8,7 @@ on:
 permissions:
      pages: write
      id-token: write
+     contents: read
 jobs:
     deploy:
         runs-on: ubuntu-latest
@@ -24,6 +25,8 @@ jobs:
               #setup github pages
             - name: Setup github pages
               uses: actions/configure-pages@v4
+              with:
+                path: "."
 
               #static code artifacts
             - name: Upload static
