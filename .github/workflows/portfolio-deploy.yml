@@ -3,6 +3,7 @@ name: Portfolio
 on:
     push:
         branches: [main]
+    workflow_dispatch:
 
 permissions:
      pages: write
@@ -19,7 +20,7 @@ jobs:
             #get access to your Portfolio code via pre-built actions
             #clones or checks out the code where this workflow is written
             - name: Checkout Code
-              uses: actions/checkout@4
+              uses: actions/checkout@v4
               #setup github pages
             - name: Setup github pages
               uses: action/configure-pages@v4
